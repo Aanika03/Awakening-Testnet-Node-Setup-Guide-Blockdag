@@ -1,0 +1,43 @@
+Clone the repo:
+
+git clone https://github.com/yourusername/blockdag-scripts.git
+cd blockdag-scripts
+
+
+Configure wallet:
+
+Option A: .env file
+
+PUB_ETH_ADDR=0xYourEvmWalletAddress
+
+
+Option B: wallet.txt (last line used)
+
+0xYourEvmWalletAddress
+
+
+.env takes precedence if both exist.
+
+Verify Docker:
+
+docker --version
+docker compose version
+
+
+Install Docker on Ubuntu/WSL:
+
+sudo ./install_docker.sh
+
+▶️ Running the Node
+./blockdag.sh
+
+
+Check status:
+
+docker ps
+tail -f bin/bdag/logs/node.log
+
+
+Stop node:
+
+docker compose down
