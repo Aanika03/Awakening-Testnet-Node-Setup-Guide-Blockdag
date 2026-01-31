@@ -1,0 +1,9 @@
+Restart without wiping: ./restart.sh
+
+Restart and wipe data: ./restartWithCleanup.sh
+
+Pull latest image: MINING_ADDRESS=$PUB_ETH_ADDR docker compose pull
+
+View logs: docker compose logs -f
+
+Remove volumes: docker compose down --volumes
