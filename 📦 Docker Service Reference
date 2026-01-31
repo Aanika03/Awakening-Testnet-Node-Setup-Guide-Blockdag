@@ -1,0 +1,28 @@
+Service: nodeworker
+Image: abhishek1857/blockdag:worker-20250923-102625
+
+Ports:
+
+38131 RPC
+
+18545 HTTP
+
+18546 WebSocket
+
+18150 Peer
+
+Volumes:
+
+bdag_bin → /opt/bdag
+
+./bin/bdag/data → /bdag/data
+
+./bin/bdag/logs → /bdag/logs
+
+---
+
+### **2️⃣ .env.example**
+
+```env
+# Copy this to .env and set your mining wallet
+PUB_ETH_ADDR=0xYourEvmWalletAddress
