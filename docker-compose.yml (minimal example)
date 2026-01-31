@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  nodeworker:
+    image: abhishek1857/blockdag:worker-20250923-102625
+    container_name: blockdag-testnet-network
+    restart: unless-stopped
+    environment:
+      MINING_ADDRESS: ${PUB_ETH_ADDR}
+      NODE_ARGS: "--testnet --rpc --ws --http"
+    ports:
+      - "38131:38131"
+      - "18545:18545"
+      - "18546:18546"
+      - "18150:18150"
+    volumes:
+      - bdag_bin:/opt/bdag
+      - ./bin/bdag/data:/bdag/data
+      - ./bin/bdag/logs:/bdag/logs
+
+volumes:
+  bdag_bin:
