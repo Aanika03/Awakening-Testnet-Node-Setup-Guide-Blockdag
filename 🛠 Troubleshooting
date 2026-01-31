@@ -1,0 +1,9 @@
+PUB_ETH_ADDR not set: Check .env or wallet.txt, last line must be your wallet
+
+Docker permission denied: sudo usermod -aG docker $USER + restart session
+
+Node keeps restarting: Check logs or run ./restartWithCleanup.sh
+
+Port conflicts: Default ports are 38131, 18545, 18546, 18150
+
+Windows/WSL: Keep repo inside WSL filesystem (/home/user)
