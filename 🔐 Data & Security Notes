@@ -1,0 +1,7 @@
+Never commit .env or wallet.txt
+
+Blockchain data: bin/bdag/data/
+
+Logs: bin/bdag/logs/
+
+Backup before cleanup operations
