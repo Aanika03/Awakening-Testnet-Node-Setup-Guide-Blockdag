@@ -1,0 +1,10 @@
+OS: Linux (Ubuntu/Debian/Fedora/Arch), macOS (Ventura 13+), Windows via WSL2
+
+Software: Docker Engine & Compose, Git, Bash
+
+Hardware: 4+ CPU cores, 8GB+ RAM, 20GB+ disk, stable internet
+
+🔑 Wallet Address Requirement
+
+BlockDAG now requires EVM-compatible Ethereum addresses (0x...) for mining.
+Legacy UTXO/PK addresses are not supported.
